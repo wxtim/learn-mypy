@@ -1,0 +1,21 @@
+diff --git a/01.basic_syntax.py b/answers/01.basic_syntax.py
+index 4af48e3..bb12fa4 100644
+--- a/01.basic_syntax.py
++++ b/answers/01.basic_syntax.py
+@@ -18,14 +18,14 @@ mychoice: Union[str, int] = 42
+ # Normally you'd start typing at function or Class level:
+ 
+ # `->` Arrow syntax shows what is expected:
+-def pointless_example(input_):
++def pointless_example(input_: str) -> int:
+     return len(input_) ** 2
+ 
+ 
+ print(pointless_example('Hello'))
+ 
+ 
+-def two_possible_outputs(input_):
++def two_possible_outputs(input_: str) -> List[Any]:
+     from random import choice
+     lotto = choice(['Foo', 12, 'Zaphod'])
+     return [lotto, input_]
