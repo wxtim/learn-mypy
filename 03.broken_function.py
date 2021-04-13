@@ -2,7 +2,8 @@
 Aim
 ===
 
-To give you a chance to try the basic mypy syntax:
+By the end of this excercise you should be able to use MyPy
+annotation syntax for a basic function:
 
 ```python
 def function(input:type) -> outputtype:
@@ -23,7 +24,7 @@ To run MyPy on this file
    mypy 03.broken_function.py
 
 
-It's taken pretty directly from the MyPy docs
+(It's taken pretty directly from the MyPy docs)
 """
 
 

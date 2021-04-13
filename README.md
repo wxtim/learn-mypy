@@ -2,8 +2,24 @@
 
 A brief introduction to MyPy.
 
+Contents:
+- Why bother with MyPy.
+- Two example scripts.
+- Two excercise scripts.
+
 # Why Bother With MyPy
 
+- Prevents bugs sooner.
+- Stops programme doing daft things.
+  Classic example is:
+  ```python
+  def greet(name):
+     print(f'Hello {name}')
+
+   greet({42: 'Deep thought'})  # Python handles this, even if it's not sensible.
+   >>> Hello {42: 'Deep thought'}
+  ```
+- Sets typing in the code rather than the docstring, where it can become out of date without being called out by continuous testing.
 
 # How to get a copy of this repo:
 

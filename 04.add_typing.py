@@ -2,30 +2,16 @@
 Aim
 ===
 
-To give you a chance to try typing some existing functions:
-
-```python
-def function(input:type) -> outputtype:
-    ...
-```
+By the end of this excercise you should be able to add more complex
+static typing to functions using the ``typing`` module.
 
 Task
 ====
 
 Here are a selection of functions - can you make them typed using MyPy?
 
-
-To run MyPy on this file
-
-.. code:: python
-
-   mypy 03.broken_function.py
-
-
-Hint
-====
-
-Look at the import statement ``from typing import ...``
+Before Python 3.9 you will need to use special types imported from
+``typing`` to annotate functions.
 """
 
 import os
