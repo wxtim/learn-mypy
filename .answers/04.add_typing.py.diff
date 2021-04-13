@@ -1,0 +1,31 @@
+diff --git a/04.add_typing.py b/.answers/04.add_typing.py
+index bf9b1bd..2fee223 100644
+--- a/04.add_typing.py
++++ b/.answers/04.add_typing.py
+@@ -33,7 +33,7 @@ import os
+ from typing import Dict, Optional, Any, Union
+ 
+ 
+-def linebreak_(text):
++def linebreak_(text: str) -> list:
+     """1. Add basic typing - this function should take a string and
+     return a list.
+     """
+@@ -47,7 +47,7 @@ assert (
+ )
+ 
+ 
+-def two_types_of_output():
++def two_types_of_output() -> Union[str, int]:
+     """2. Use ``Union`` from typing to allow multiple valid output types
+     """
+     if os.environ['USER'][0] in 'abcdefghijklm':
+@@ -59,7 +59,7 @@ def two_types_of_output():
+ two_types_of_output()
+ 
+ 
+-def get_host(platform):
++def get_host(platform: Union[str, Dict[str, Any]]) -> Optional[str]:
+     """3. Almost a real world example - based on some Cylc 8 work.
+ 
+     You will need to tell mypy that the input can be of two possible types

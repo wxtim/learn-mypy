@@ -1,0 +1,20 @@
+diff --git a/02.real_world_example.py b/.answers/02.real_world_example.py
+index 3a0be22..1c7ed00 100644
+--- a/02.real_world_example.py
++++ b/.answers/02.real_world_example.py
+@@ -2,12 +2,14 @@
+ from subprocess import run
+ 
+ 
+-def print_some_info():
++def print_some_info() -> str:
+     # There were a lot of interfaces to shell stuff and file reading
+     # In Rose:
+     # On the move to Python 3, most of these caused widespread breakages
+     # because they now returned bytes not str types.
+     info = run(['cat', f'{__file__}/stuff/02.stuffin'], capture_output=True)
++
++    # Solution would have been to do
+     return info.stdout
+ 
+ 
