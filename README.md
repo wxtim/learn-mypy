@@ -1,4 +1,4 @@
-# A breif introduction to MyPy
+# A brief introduction to MyPy
 
 Disclaimer: I wrote this to crystalize my own learning. I don't claim to be
 an expert.

@@ -23,12 +23,13 @@ def pointless_example(input_):
 
 
 print(pointless_example('Hello'))
+print(pointless_example([1, 2]))
 
 
-def two_possible_outputs(input_):
+def two_possible_outputs(input_) -> List[Any]:
     from random import choice
     lotto = choice(['Foo', 12, 'Zaphod'])
     return [lotto, input_]
 
 
-print(two_possible_outputs('Hi'))
+print(two_possible_outputs('HI'))
