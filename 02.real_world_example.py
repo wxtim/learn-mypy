@@ -1,5 +1,5 @@
 # An example where typing might have saved me a lot of pain.
-from subprocess import Popen, STDOUT, PIPE
+from subprocess import Popen, PIPE
 
 
 def print_some_info():
@@ -7,8 +7,11 @@ def print_some_info():
     # In Rose:
     # On the move to Python 3, most of these caused widespread breakages
     # because they now returned bytes not str types.
-    p = Popen(['cat', '{}/stuff/02.stuffin'.format(__file__)], stdout=PIPE)
-    return p.communicate()
+    info = Popen(
+        ['cat', 'stuff/02.stuffin'],
+        stdout=PIPE
+    )
+    return info.communicate()[0]
 
 
-print('[NOTE]' + print_some_info())
+print('[NOTE] ' + print_some_info().strip())
