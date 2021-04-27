@@ -31,10 +31,19 @@ print(typed_example('Hello'))
 print(typed_example([1, 2]))  # Gets flagged by mypy
 
 
-def two_possible_outputs(input_) -> List[Any]:
+# Typing added to a more complex example:
+def two_possible_outputs(my_input: Union[str, int]) -> List[Any]:
+    """Return a list containing elements with a broad range of types
+
+    Input: Union to allow select options
+    Output: Package up in List; Any for elements within, as type range is broad
+    """
     from random import choice
-    lotto = choice(['Foo', 12, 'Zaphod'])
-    return [lotto, input_]
+
+    lotto = choice(['Foo', 12, 3.14])  # lotto chosen randomly from these options
+    return [lotto, my_input]
 
 
 print(two_possible_outputs('HI'))
+print(two_possible_outputs(2))
+print(two_possible_outputs(None))  # Gets flagged by mypy
