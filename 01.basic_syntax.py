@@ -4,7 +4,12 @@
 foo: str = 'Hello'
 bar: int = 42
 
-# define something more complex (Python 3.6-3.8)
+# Define something more complex (Python 3.6-3.8)
+# The typing module provides some handy options for working with more complex
+# variables which can't be expressed directly by the most basic built-in types
+# (str, int, float, ...).
+# A few examples of these "special typing primitives" below:
+# (more in https://docs.python.org/3/library/typing.html#special-typing-primitives )
 from typing import Dict, Optional, Union, Any, List, Iterable
 mylist: List = []
 my_nailed_down_list: List[str] = ["a", "b"]  # mypy will flag = [1, 2]
