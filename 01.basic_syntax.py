@@ -1,8 +1,15 @@
 # Basic MyPy Syntax
 
-# define a variable:
+# Add typing to a basic variable definition
+# Syntax for variable "var":
+# var_name: var_type = var_value
 foo: str = 'Hello'
 bar: int = 42
+# In more words, syntax splits the normal var_name = var_value assignment
+# before the equals sign, and inserts a colon, followed by the specification
+# of the type for var_name.
+# Specifying type lets mypy help us: mypy can check our later use of var_name is valid.
+
 
 # Define something more complex (Python 3.6-3.8)
 # The typing module provides some handy options for working with more complex
