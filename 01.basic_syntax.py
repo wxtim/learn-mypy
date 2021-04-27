@@ -16,15 +16,19 @@ myiterable: Iterable = range(12)
 
 # But MyPy can usually work types like this out.
 
-# Normally you'd start typing at function or Class level:
 
-# `->` Arrow syntax shows what is expected:
-def pointless_example(input_):
-    return len(input_) ** 2
+# Adding typing: normally you'd start at function or class level:
+def untyped_example(my_input):
+    return len(my_input) ** 2
 
+# For returned variables, the `->` arrow syntax shows what is expected:
+def typed_example(my_input: str) -> int:
+    return len(my_input) ** 2
 
-print(pointless_example('Hello'))
-print(pointless_example([1, 2]))
+print(untyped_example('Hello'))
+print(untyped_example([1, 2]))  # Valid Python -> result. But did you mean this?
+print(typed_example('Hello'))
+print(typed_example([1, 2]))  # Gets flagged by mypy
 
 
 def two_possible_outputs(input_) -> List[Any]:
