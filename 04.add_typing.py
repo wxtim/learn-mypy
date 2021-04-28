@@ -2,7 +2,7 @@
 Aim
 ===
 
-By the end of this excercise you should be able to add more complex
+By the end of this exercise you should be able to add more complex
 static typing to functions using the ``typing`` module.
 
 Task

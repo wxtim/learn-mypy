@@ -2,7 +2,7 @@
 Aim
 ===
 
-By the end of this excercise you should be able to use MyPy
+By the end of this exercise you should be able to use MyPy
 annotation syntax for a basic function:
 
 ```python
@@ -43,7 +43,7 @@ for case in TEST_CASES:
     print(hello(case))
 
 
-def extension_excercise(name):
+def extension_exercise(name):
     """If you fancy a challenge try doing the same here...
 
     (
@@ -58,4 +58,4 @@ def extension_excercise(name):
 
 
 for case in TEST_CASES:
-    print(extension_excercise(case))
+    print(extension_exercise(case))

@@ -4,22 +4,22 @@ index f2a0117..a7f45a2 100644
 +++ b/.answers/03.broken_function.py
 @@ -27,7 +27,7 @@ It's taken pretty directly from the MyPy docs
  """
- 
- 
+
+
 -def hello(name):
 +def hello(name: str) -> str:
      return f'hello {name}'
- 
- 
+
+
 @@ -42,7 +42,10 @@ for case in TEST_CASES:
      print(hello(case))
- 
- 
--def extension_excercise(name):
+
+
+-def extension_exercise(name):
 +from typing import Union, List
 +
 +
-+def extension_excercise(name: Union[str, list ]) -> str:
++def extension_exercise(name: Union[str, list ]) -> str:
      """If you fancy a challenge try doing the same here...
- 
+
      (

@@ -45,7 +45,7 @@ for case in TEST_CASES:
 from typing import Union, List
 
 
-def extension_excercise(name: Union[str, list ]) -> str:
+def extension_exercise(name: Union[str, list ]) -> str:
     """If you fancy a challenge try doing the same here...
 
     (
@@ -60,4 +60,4 @@ def extension_excercise(name: Union[str, list ]) -> str:
 
 
 for case in TEST_CASES:
-    print(extension_excercise(case))
+    print(extension_exercise(case))
