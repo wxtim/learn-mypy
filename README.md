@@ -77,6 +77,7 @@ Ultimately though, MyPy is optional. You can have both static and dynamic
 typing for different bits of the same script!
 
 ---
+
 ## How to get a copy of this repo:
 
 Either:

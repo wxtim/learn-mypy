@@ -84,4 +84,4 @@ assert get_host('sugar') == 'localhost'
 assert get_host('hpc') == 'cray01'
 assert get_host(
     {'name': 'my_raspi', 'host': 'raspberry', 'job runner': 'slurm'}
-) ==  'raspberry'
+) == 'raspberry'

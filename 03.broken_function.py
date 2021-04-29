@@ -29,7 +29,7 @@ To run MyPy on this file
 
 
 def hello(name):
-    return f'hello {name}'
+    return f'Hello {name}'
 
 
 # Decide which of these you think are acceptable inputs...
@@ -43,19 +43,19 @@ for case in TEST_CASES:
     print(hello(case))
 
 
-def extension_exercise(name):
-    """If you fancy a challenge try doing the same here...
+# def extension_exercise(name):
+#     """If you fancy a challenge try doing the same here...
 
-    (
-        You will need to use ``from typing import Union`` and add
-        ``Union[str, list]``...
-    )
-    """
-    if isinstance(name, str):
-        return hello(name)
-    elif isinstance(list, name) and all([isinstance(str, i) for i in name]):
-        return ' '.join(name)
+#     (
+#         You will need to use ``from typing import Union`` and add
+#         ``Union[str, list]``...
+#     )
+#     """
+#     if isinstance(name, str):
+#         return hello(name)
+#     elif isinstance(list, name) and all([isinstance(str, i) for i in name]):
+#         return ' '.join(name)
 
 
-for case in TEST_CASES:
-    print(extension_exercise(case))
+# for case in TEST_CASES:
+#     print(extension_exercise(case))
